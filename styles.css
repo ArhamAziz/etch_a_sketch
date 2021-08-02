@@ -1,8 +1,35 @@
+#button-div {
+    margin: auto;
+    width: 100%;
+}
+#reset {
+    display: block;
+    background-color: blue;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    border: solid white 5px;
+    margin: auto;
+    padding: 10px 250px;
+}
+#reset:hover {
+    background-color: darkblue;
+    border: solid orange 5px;
+    font-weight: bold;
+}
+
 #container {
     display: grid;
-    grid-template-columns: repeat(16, 25px);
-    grid-template-rows: repeat(16, 25px);
-    align-items: center;
-    align-content: center;
-    text-align: center;
+    width: 80vh;
+    height: 80vh;
+    margin: 25px auto;
+    grid-template-columns: repeat(16, auto);
+    border: solid black 2px;
+}
+.cell {
+    content: "";
+    padding-top: 100%;
+    display: block;
 }
